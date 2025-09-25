@@ -2,29 +2,67 @@
 A comprehensive deep learning project for classifying fish images into multiple species using CNN architectures and transfer learning with pre-trained models.
 
 ## 📋 Table of Contents 
-- [Project Overview](#project-overview) - [Features](#features) - [Dataset](#dataset) - [Models](#models) - [Installation](#installation) - [Usage](#usage) - [Project Structure](#project-structure) - [Results](#results) - [Deployment](#deployment) 
+- [Project Overview](#project-overview)
+- - [Features](#features)
+  - - [Dataset](#dataset)
+    - - [Models](#models)
+      - - [Installation](#installation)
+        - - [Usage](#usage)
+          - - [Project Structure](#project-structure)
+            - - [Results](#results)
+              - - [Deployment](#deployment) 
 
 ## 🎯 Project Overview 
 This project implements a multiclass fish species classification system using state-of-the-art deep learning techniques. The system compares multiple CNN architectures and transfer learning approaches to achieve optimal performance. 
 
 ### Skills & Technologies Used 
-- **Deep Learning**: CNN architectures, Transfer Learning - **Framework**: TensorFlow/Keras - **Languages**: Python - **Deployment**: Streamlit - **Data Processing**: Data Augmentation, Preprocessing - **Evaluation**: Model Comparison, Metrics Analysis - **Visualization**: Matplotlib, Seaborn 
+- **Deep Learning**: CNN architectures, Transfer Learning
+- - **Framework**: TensorFlow/Keras
+- - **Languages**: Python
+- - **Deployment**: Streamlit
+- - **Data Processing**: Data Augmentation, Preprocessing
+-  - **Evaluation**: Model Comparison, Metrics Analysis
+- - **Visualization**: Matplotlib, Seaborn 
 
 ### Business Use Cases 
-1. **Enhanced Accuracy**: Determine the best model architecture for fish image classification 2. **Deployment Ready**: Create a user-friendly web application for real-time predictions 3. **Model Comparison**: Evaluate and compare metrics across models to select the most suitable approach 
+1. **Enhanced Accuracy**: Determine the best model architecture for fish image classification
+
+2. **Deployment Ready**: Create a user-friendly web application for real-time predictions
+
+3. **Model Comparison**: Evaluate and compare metrics across models to select the most suitable approach 
 
 ## ✨ Features 
-- **Multiple Model Architectures**: CNN from scratch + 5 pre-trained models - **Comprehensive Evaluation**: Accuracy, Precision, Recall, F1-Score analysis - **Data Augmentation**: Rotation, zoom, flip, and other techniques - **Interactive Web App**: Streamlit-based deployment for real-time predictions - **Model Comparison**: Detailed performance comparison with visualizations - **Confusion Matrix Analysis**: Per-class performance evaluation - **Best Model Selection**: Automatic selection and saving of the best performing model 
+- **Multiple Model Architectures**: CNN from scratch + 5 pre-trained models
+- - **Comprehensive Evaluation**: Accuracy, Precision, Recall, F1-Score analysis
+- - **Data Augmentation**: Rotation, zoom, flip, and other techniques
+- - **Interactive Web App**: Streamlit-based deployment for real-time predictions
+- - **Model Comparison**: Detailed performance comparison with visualizations
+- - **Confusion Matrix Analysis**: Per-class performance evaluation
+- - **Best Model Selection**: Automatic selection and saving of the best performing model 
 
 ## 📊 Dataset 
 The dataset consists of fish images categorized into folders by species. The system automatically handles: - Data loading from zip files - Train/validation splitting (80/20) - Image preprocessing and normalization - Data augmentation for training robustness 
 
 ### Data Preprocessing Steps 
-1. **Image Rescaling**: Normalize pixel values to [0, 1] range 2. **Data Augmentation**: - Rotation (±30 degrees) - Width/Height shift (±20%) - Shear transformation - Zoom (±20%) - Horizontal flipping 3. **Validation Split**: 20% of data reserved for validation 
+1. **Image Rescaling**: Normalize pixel values to [0, 1] range
+2. **Data Augmentation**: - Rotation (±30 degrees) - Width/Height shift (±20%) - Shear transformation - Zoom (±20%) - Horizontal flipping
+3. **Validation Split**: 20% of data reserved for validation 
 
 ## 🤖 Models 
 ### 1. CNN from Scratch 
-- Custom architecture with 4 convolutional blocks - BatchNormalization and Dropout for regularization - GlobalAveragePooling for dimension reduction ### 2. Transfer Learning Models - **VGG16**: Deep architecture with small filters - **ResNet50**: Skip connections for deeper networks - **MobileNet**: Lightweight architecture for efficiency - **InceptionV3**: Multi-scale feature extraction - **EfficientNetB0**: Compound scaling for optimal performance All transfer learning models use: - Pre-trained ImageNet weights - Frozen base layers - Custom classification head - Fine-tuning capabilities 
+- Custom architecture with 4 convolutional blocks - BatchNormalization and Dropout for regularization - GlobalAveragePooling for dimension reduction
+- ### 2. Transfer Learning Models
+- - **VGG16**: Deep architecture with small filters
+- - **ResNet50**: Skip connections for deeper networks
+- - **MobileNet**: Lightweight architecture for efficienc
+- - **InceptionV3**: Multi-scale feature extraction
+- - **EfficientNetB0**: Compound scaling for optimal performance All transfer learning
+
+- models use:
+- - Pre-trained ImageNet weights
+- - Frozen base layers
+- - Custom classification head
+- - Fine-tuning capabilities 
 
 ## 🚀 Installation 
 
@@ -64,7 +102,7 @@ classifier = FishClassifier(
 
 # Run complete training pipeline
 comparison_results, best_model_name, best_model = classifier.run_complete_pipeline(
-    zip_path=r"C:\Users\sathishkumar\Downloads\Fish_image_classification\Data",  # Path to your dataset zip file
+zip_path=r"C:\Users\sathishkumar\Downloads\Fish_image_classification\Data",  # Path to your dataset zip file
     epochs=50
 )
 ### 2. Model Evaluation
