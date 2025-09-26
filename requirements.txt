@@ -1,0 +1,26 @@
+# Streamlit: Web framework for creating the multi-page dashboard (Home, Prediction, Comparison, Developer)
+streamlit==1.39.0
+
+# TensorFlow: Loads and runs the trained fish classification model (best_fish_model.h5) for predictions
+tensorflow==2.17.0
+
+# OpenCV (headless): Handles image processing tasks (e.g., loading images for prediction)
+opencv-python-headless==4.10.0.84
+
+# Pillow: Processes and resizes images for model input in the prediction page
+pillow==10.4.0
+
+# NumPy: Supports array operations for image preprocessing and model predictions
+numpy==1.26.4
+
+# Pandas: Manages and displays the model comparison table (df_comparison.csv) on the Comparison page
+pandas==2.2.2
+
+# Matplotlib: Used for plotting training histories and confusion matrices in Colab (Step 6); optional for custom dashboard plots
+matplotlib==3.9.2
+
+# Seaborn: Enhances visualization of confusion matrices in Colab (Step 6); optional for custom dashboard plots
+seaborn==0.13.2
+
+#Joblib: Loads class names for prediction
+joblib==1.4.2
