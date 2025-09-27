@@ -34,6 +34,7 @@ A comprehensive deep learning project for classifying fish images into multiple 
 ◘ Contact
 
 ◘ Author
+
 ## 🎯 Project Overview
 
 This project implements a multiclass fish species classification system using state-of-the-art deep learning techniques. The system compares multiple CNN architectures and transfer learning approaches to achieve optimal performance.
@@ -41,11 +42,17 @@ This project implements a multiclass fish species classification system using st
 ## Skills & Technologies Used
 
 **Deep Learning**: CNN architectures, Transfer Learning
+
 **Framework**: TensorFlow/Keras
+
 **Languages**: Python
+
 **Deployment**: Streamlit
+
 **Data Processing**: Data Augmentation, Preprocessing
+
 **Evaluation**: Model Comparison, Metrics Analysis
+
 **Visualization**: Matplotlib, Seaborn
 
 ## Business Use Cases
@@ -76,9 +83,13 @@ This project implements a multiclass fish species classification system using st
 
 The dataset consists of fish images categorized into folders by species. 
 **The system automatically handles**: 
+
 - Data loading from zip files
+
 - Train/validation splitting (80/20)
+
 - Image preprocessing and normalization
+
 - Data augmentation for training robustness
 
 ## Data Preprocessing Steps
